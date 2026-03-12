@@ -18,6 +18,11 @@ const portfolioData = {
             { title: "Experience", desc: "— 2+ years across full-stack engineering, system architecture, and AI integration." },
             { title: "Focus", desc: "— Distributed systems, AI-agent orchestration, and modern web interfaces." },
             { title: "Approach", desc: "— Pragmatic and detail-oriented, with a strong bias for resilient, edge-case-aware design." }
+        ],
+        socials: [
+            { name: "LinkedIn", url: "https://www.linkedin.com/in/akash200307/", icon: "linkedin", color: "blue" },
+            { name: "GitHub", url: "https://github.com/Akash200307", icon: "github", color: "white" },
+            { name: "LeetCode", url: "https://leetcode.com/Akash200307/", icon: "leetcode", color: "orange" }
         ]
     },
     skills: {
@@ -82,17 +87,17 @@ const portfolioData = {
             title: "LSRW Communication <br><span class=\"highlight\">Evaluation</span> <br>System",
             description: "A Spring AI-powered platform that evaluates all four English communication skills — Listening, Speaking, Reading, and Writing — using self-hosted speech recognition and a fine-tuned Gemini 2.0 Flash pipeline.",
             tags: [
-                { name: "Spring AI",       color: "green"  },
-                { name: "Gemini 2.0 Flash",color: "blue"   },
-                { name: "Whisper v3 Large",color: "purple" },
-                { name: "AWS S3",          color: "red"    }
+                { name: "Spring AI", color: "green" },
+                { name: "Gemini 2.0 Flash", color: "blue" },
+                { name: "Whisper v3 Large", color: "purple" },
+                { name: "AWS S3", color: "red" }
             ],
             concreteIdea: "<strong>Concrete idea:</strong> A candidate submits audio/text responses; the system transcribes speech via self-hosted Whisper, evaluates each LSRW dimension with specialised AI prompts, and returns scored feedback on fluency, comprehension, creativity, and thinking depth.",
             metricsTitle: "IMPACT & METRICS",
             metrics: [
                 { title: "Cost Efficiency", desc: "— 50% reduction in transcription costs by replacing the OpenAI Whisper API with a self-hosted Whisper v3 Large instance; 30% further savings by hosting on Hetzner over cloud alternatives." },
-                { title: "AI Quality",      desc: "— Leveraged Gemini 2.0 Flash with best-practice prompt engineering, delivering high-accuracy evaluation at a fraction of GPT-4 pricing." },
-                { title: "Architecture",    desc: "— S3-backed MP3 storage decoupled audio from the database, significantly reducing DB load across all four LSRW evaluation pipelines." }
+                { title: "AI Quality", desc: "— Leveraged Gemini 2.0 Flash with best-practice prompt engineering, delivering high-accuracy evaluation at a fraction of GPT-4 pricing." },
+                { title: "Architecture", desc: "— S3-backed MP3 storage decoupled audio from the database, significantly reducing DB load across all four LSRW evaluation pipelines." }
             ]
         }
     ],

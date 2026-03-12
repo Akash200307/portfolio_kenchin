@@ -558,11 +558,85 @@ footer {
     }
 }
 
+/* SOCIAL LINKS */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+/* Default green fallback */
+.social-icon:not([class*="social-icon-"]) {
+    background: rgba(0, 234, 101, 0.05);
+    border-color: rgba(0, 234, 101, 0.3);
+    color: var(--tag-green-text);
+}
+.social-icon:not([class*="social-icon-"]):hover {
+    background: rgba(0, 234, 101, 0.15);
+}
+
+/* Custom Colors from data.js */
+.social-icon-blue {
+    background: rgba(88, 166, 255, 0.05);
+    border-color: rgba(88, 166, 255, 0.3);
+    color: var(--tag-blue-text);
+}
+.social-icon-blue:hover {
+    background: rgba(88, 166, 255, 0.15);
+}
+
+.social-icon-white {
+    background: rgba(240, 246, 252, 0.05);
+    border-color: rgba(240, 246, 252, 0.3);
+    color: var(--color-text-main);
+}
+.social-icon-white:hover {
+    background: rgba(240, 246, 252, 0.15);
+}
+
+.social-icon-orange {
+    background: rgba(255, 161, 22, 0.05);
+    border-color: rgba(255, 161, 22, 0.3);
+    color: #ffa116;
+}
+.social-icon-orange:hover {
+    background: rgba(255, 161, 22, 0.15);
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 1024px) {
     .section-container {
         flex-direction: column;
         gap: 40px;
+        padding: 80px 0;
+    }
+
+    /* Fix navbar for mobile */
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
 
     .hero-left,
@@ -572,20 +646,52 @@ footer {
     }
 
     .main-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
-    .navigation {
-        position: static;
-        flex-direction: row;
-        transform: none;
-        margin-top: 30px;
-        justify-content: flex-end;
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+
+    .interview-card {
+        padding: 25px;
+    }
+
+    .reasons-list li {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .reason-header {
+        width: 100%;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .exp-card {
+        padding: 25px;
     }
 
     .exp-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .social-links {
+        justify-content: flex-start;
     }
 }

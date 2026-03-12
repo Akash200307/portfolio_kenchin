@@ -41,6 +41,12 @@ function renderPortfolio() {
                     ${buildTags(intro.tags)}
                 </div>
 
+                <div class="social-links">
+                    ${portfolioData.intro.socials ? portfolioData.intro.socials.map(social => {
+            return `<a href="${social.url}" class="social-icon social-icon-${social.color}" target="_blank" rel="noopener noreferrer" aria-label="${social.name}"><i class="cib-${social.icon} icon-large"></i></a>`;
+        }).join('') : ''}
+                </div>
+
                 <div class="concrete-idea">
                     <p>${intro.concreteIdea}</p>
                 </div>
