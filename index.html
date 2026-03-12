@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Developer // Kenchin</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Abstract glowing background blob that follows scroll vaguely -->
+    <div class="glow-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-nav fade-in">
+        <div class="nav-container">
+            <div id="nav-brand" class="nav-brand"></div>
+            <ul class="nav-links">
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <!-- INTRO SECTION -->
+        <section id="intro" class="section-container min-h-screen"></section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section-container tight-section"></section>
+
+        <!-- PROJECTS SECTION -->
+        <!-- Future-proofing: We can add multiple projects rendering here -->
+        <div id="projects-wrapper"></div>
+        
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="section-container tight-section"></section>
+        
+        <footer>
+            <div id="footer-content" class="footer-content glass"></div>
+        </footer>
+    </main>
+
+    <!-- Load data first, then the script that uses it -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
