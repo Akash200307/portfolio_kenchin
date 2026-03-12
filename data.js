@@ -33,8 +33,8 @@ const portfolioData = {
                 tags: [
                     { name: "Java", color: "purple" },
                     { name: "Spring Boot", color: "green" },
-                    { name: "Python", color: "green" },
-                    { name: "Postgresql", color: "blue" }
+                    { name: "Python", color: "blue" },
+                    { name: "Postgresql", color: "red" }
                 ]
             },
             {
