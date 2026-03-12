@@ -90,7 +90,7 @@ const portfolioData = {
                 { name: "Spring AI", color: "green" },
                 { name: "Gemini 2.0 Flash", color: "blue" },
                 { name: "Whisper v3 Large", color: "purple" },
-                { name: "AWS S3", color: "red" }
+                { name: "Cloudflare R2", color: "red" }
             ],
             concreteIdea: "<strong>Concrete idea:</strong> A candidate submits audio/text responses; the system transcribes speech via self-hosted Whisper, evaluates each LSRW dimension with specialised AI prompts, and returns scored feedback on fluency, comprehension, creativity, and thinking depth.",
             metricsTitle: "IMPACT & METRICS",
